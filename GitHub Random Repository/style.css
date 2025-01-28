@@ -1,0 +1,120 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+div {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Dropdown */
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/* Button */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Repo Display Area */
+#showRepoDiv {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+#showRepoDiv h3 {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+#showRepoDiv a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#showRepoDiv a:hover {
+    text-decoration: underline;
+}
+
+/* Repository Stats Section */
+.repo-stats {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+    align-items: center;
+}
+
+.repo-stats span {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.repo-stats .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    filter: grayscale(50%);
+    transition: filter 0.3s ease;
+}
+
+.repo-stats .icon:hover {
+    filter: grayscale(0%);
+}
+
+.retry-button {
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: red;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #showRepoDiv {
+        width: 90%;
+    }
+
+    .repo-stats {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
